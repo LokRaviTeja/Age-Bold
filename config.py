@@ -1,8 +1,9 @@
 PARTNER_CONFIG = {
     "acme": {
-        "file_path": "/Filestore/tables/acme_members.txt",
-        "delimiter": "|",
         "partner_code": "ACME",
+        "file_path": "/FileStore/tables/acme_members.txt",
+        "delimiter": "|",
+        "has_header": True,
         "column_mapping": {
             "MBI": "external_id",
             "FNAME": "first_name",
@@ -11,20 +12,21 @@ PARTNER_CONFIG = {
             "EMAIL": "email",
             "PHONE": "phone",
         },
+        "dob_input_format": "MM/dd/yyyy"
     },
     "bettercare": {
-      "partner_code": "BETTERCARE",
-      "file_path": "/FileStore/tables/bettercare_members.csv",
-      "delimiter": ",",
-      "has_header": True,
-      "column_mapping": {
-        "subscriber_id": "external_id",
-        "first_name": "first_name",
-        "last_name": "last_name",
-        "birth_date": "dob",
-        "email_address": "email",
-        "phone_number": "phone"
-      },
-      "dob_input_format": "yyyy-MM-dd"
+        "partner_code": "BETTERCARE",
+        "file_path": "/FileStore/tables/bettercare_members.csv",
+        "delimiter": ",",
+        "has_header": True,
+        "column_mapping": {
+            "subscriber_id": "external_id",
+            "first_name": "first_name",
+            "last_name": "last_name",
+            "birth_date": "dob",
+            "email_address": "email",
+            "phone_number": "phone"
+        },
+        "dob_input_format": "yyyy-MM-dd"
     }
 }
