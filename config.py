@@ -1,6 +1,6 @@
 PARTNER_CONFIG = {
     "acme": {
-        "file_path": "data/acme_members.txt",
+        "file_path": "/Filestore/tables/acme_members.txt",
         "delimiter": "|",
         "partner_code": "ACME",
         "column_mapping": {
