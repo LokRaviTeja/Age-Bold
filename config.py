@@ -13,16 +13,18 @@ PARTNER_CONFIG = {
         },
     },
     "bettercare": {
-        "file_path": "data/bettercare_members.csv",
-        "delimiter": ",",
-        "partner_code": "BETTERCARE",
-        "column_mapping": {
-            "subscriber_id": "external_id",
-            "first_name": "first_name",
-            "last_name": "last_name",
-            "birth_date": "dob",
-            "email_address": "email",
-            "phone_number": "phone",
-        },
-    },
+      "partner_code": "BETTERCARE",
+      "file_path": "/FileStore/tables/bettercare_members.csv",
+      "delimiter": ",",
+      "has_header": True,
+      "column_mapping": {
+        "subscriber_id": "external_id",
+        "first_name": "first_name",
+        "last_name": "last_name",
+        "birth_date": "dob",
+        "email_address": "email",
+        "phone_number": "phone"
+      },
+      "dob_input_format": "yyyy-MM-dd"
+    }
 }
